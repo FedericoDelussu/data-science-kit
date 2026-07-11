@@ -1,0 +1,33 @@
+# data-science-kit
+
+Reusable data-science utility modules, packaged under the `utils` namespace.
+
+## Install
+
+Local (editable):
+
+```bash
+pip install -e .
+```
+
+From GitHub:
+
+```bash
+pip install git+https://github.com/FedericoDelussu/data-science-kit.git
+```
+
+## Usage
+
+```python
+from utils.analysis import <function>
+from utils.sankey import sankey
+```
+
+## Update after new changes are pushed
+
+```bash
+pip install --upgrade --force-reinstall git+https://github.com/FedericoDelussu/data-science-kit.git
+```
+
+An editable install (`pip install -e .`) picks up local changes automatically
+after a `git pull`.
