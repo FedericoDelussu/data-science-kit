@@ -1,4 +1,4 @@
-from Modules.sankey import sankey
+from dskit.sankey import sankey
 
 def sankey_df(df, colorDict, ax=None):
     sankey(df['true'],

@@ -13,11 +13,12 @@ dependencies = [
     "numpy",
     "matplotlib",
     "seaborn",
+    "selenium",
 ]
 
 [project.urls]
 Homepage = "https://github.com/FedericoDelussu/data-science-kit"
 
 [tool.setuptools]
-# Ship only the `utils` package; keep the existing folder layout untouched.
-packages = ["utils"]
+# Ship only the `dskit` package; keep the existing folder layout untouched.
+packages = ["dskit"]

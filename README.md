@@ -1,6 +1,8 @@
 # data-science-kit
 
-Reusable data-science utility modules, packaged under the `utils` namespace.
+Reusable data-science utility modules, packaged under the `dskit` namespace.
+
+The distribution is named `data-science-kit`; the import name is `dskit`.
 
 ## Install
 
@@ -19,8 +21,8 @@ pip install git+https://github.com/FedericoDelussu/data-science-kit.git
 ## Usage
 
 ```python
-from utils.analysis import <function>
-from utils.sankey import sankey
+from dskit.analysis import <function>
+from dskit.sankey import sankey
 ```
 
 ## Update after new changes are pushed
