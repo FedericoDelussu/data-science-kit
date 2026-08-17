@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 from pdb import set_trace as bp
 
+
 ############################################
 ##### PARSE FOLDER WITH MULTIPLE FILES #####
 ############################################
@@ -99,12 +100,22 @@ class FolderParser:
 
 
 #######################################
-##### DATAFRAME COLUMN PROCESSING #####
+##### DATAFRAME EXPLORATION #####
 #######################################
 
 def check_df_nans(df):
     
     return df.isnull().sum()
+
+def check_nan_entries(df_ag, column):
+    '''
+    count total records and records without assigned locations
+    '''
+    lambda_get_df_nans = lambda df : df[df[column].isna()]
+
+    df_agn = lambda_get_df_nans(df_ag)
+    print(f'total records {len(df_ag)}')
+    print(f'nan location records {len(df_agn)}')
 
 def check_df_duplicates(df):
     '''
